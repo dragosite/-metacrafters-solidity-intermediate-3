@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  background: rgb(16, 16, 16);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../public/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+button {
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+label {
+  margin-right: 10px;
+}
+input {
+  padding: 8px;
+}
+p {
+  margin-bottom: 10px;
+}
+.balance-wrapper {
+  width: 350px;
+  margin: 20px auto;
+}
+#goal {
+  width: 100%;
+  height: 3px;
+  background: #efefef;
+  display: block;
+  /* margin: 20px auto; */
+}
+#goal-so-far {
+  width: 0;
+  height: 3px;
+  background: green;
+  display: block;
+  /* margin: 20px auto; */
+}
+
+#connect-button {
+  background-color: orange;
+  color: black;
+  margin-bottom: 40px;
+}
+
+#mint-button {
+  background-color: green;
+  color: white;
+}
+
+#burn-button {
+  background-color: red;
+  color: white;
+}
+
+#connect-button:hover {
+  background-color: rgba(255, 166, 0, 0.8);
+}
+
+#fund-button:hover {
+  background-color: rgba(0, 128, 0, 0.8);
+}
+
+#withdraw-button:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
